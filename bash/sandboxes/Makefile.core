@@ -1,0 +1,16 @@
+#
+# All the common tasks
+#
+
+build:
+	docker build --tag=$(TAG) .
+	echo "Build $(TAG) Complete"
+
+clean:
+	docker rmi $(TAG)
+
+bash:
+	docker run --rm -it $(TAG) bash
+
+push: 
+	docker push $(TAG)
