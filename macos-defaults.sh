@@ -1,13 +1,3 @@
-#!/usr/bin/env bash -eo pipefail
-
-ACCT=`whoami`
-
-# change default shell back to bash
-chsh -s /bin/bash $ACCT
-
-# Generate keypair for use with github
-ssh-keygen -o -a 100 -t ed25519 -f /Users/$ACCT/.ssh/id_ed25519 -C "colin@jchenry.me"
-
 # Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
