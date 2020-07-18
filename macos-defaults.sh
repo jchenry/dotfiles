@@ -1,6 +1,6 @@
 #!/usr/bin/env bash -eo pipefail
 
-ACCT=jchenry
+ACCT=`whoami`
 
 # change default shell back to bash
 chsh -s /bin/bash $ACCT

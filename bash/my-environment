@@ -10,40 +10,22 @@ export XDG_DATA=$HOME/.local
 
 . $XDG_CONFIG_HOME/git/git-prompt.sh
 . $XDG_CONFIG_HOME/git/git-completion.sh
+
 . $XDG_CONFIG_HOME/bash/open_github.sh
-
+. $XDG_CONFIG_HOME/bash/history.sh
+. $XDG_CONFIG_HOME/bash/goenv.sh
 . $XDG_CONFIG_HOME/bash/sandboxes/sandbox.sh
+. $XDG_CONFIG_HOME/bash/plan9.sh
 
 
-# Bash History
-shopt -s histappend
-export HISTSIZE=100000
-export HISTFILESIZE=10000000
-export HISTCONTROL=ignoreboth
-export PROMPT_COMMAND="history -a; history -n"
-export HISTIGNORE="ls:ll:cd:pwd:bg:fg:history"
 
-#Golang
-export GOPATH=$XDG_DATA
-export GOROOT=/usr/local/go
-export GOBIN=$XDG_DATA/bin
-export GO111MODULE=on
-export GOPRIVATE=github.com/jchenry 
+
 export FLUTTER=/usr/local/flutter
 
-export PLAN9=/usr/local/plan9
-
-export PATH="$PATH:$XDG_DATA/bin:/usr/local/sbin:$GOROOT/bin:$PLAN9/bin:$FLUTTER/bin"
-
-# acme visible clicks
-export visibleclicks=1
+#export PATH="$PATH:$XDG_DATA/bin:/usr/local/sbin:$PLAN9/bin:$FLUTTER/bin"
 
 
-alias build-targets="make -rpn | sed -n -e '/^$/ { n ; /^[^ .#][^ ]*:/p ; }' | egrep --color '^[^ ]*:'"
 
-alias ebg="tr 'A-Za-z' 'N-ZA-Mn-za-m'"
-
-alias tmux="tmux -f "$XDG_CONFIG_HOME"/tmux/tmux.conf"
 
 o () {
     name=$1
