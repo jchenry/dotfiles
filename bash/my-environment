@@ -25,7 +25,7 @@ export FLUTTER=/usr/local/flutter
 #export PATH="$PATH:$XDG_DATA/bin:/usr/local/sbin:$PLAN9/bin:$FLUTTER/bin"
 
 
-
+. $XDG_CONFIG_HOME/bash/alias.sh
 
 o () {
     name=$1
