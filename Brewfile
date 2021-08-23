@@ -1,6 +1,6 @@
-tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
+#tap "homebrew/bundle"
+#tap "homebrew/cask"
+#tap "homebrew/core"
 brew "docker"
 brew "drone-cli"
 brew "git"
@@ -40,7 +40,6 @@ mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "My Net", id: 931314293
-mas "NordVPN IKE", id: 1116599239
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Parcel", id: 639968404

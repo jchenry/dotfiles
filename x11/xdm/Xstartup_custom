@@ -1,0 +1,14 @@
+#!/bin/sh
+#
+# This script is run as root after the user logs in.  If this script exits with
+# a return code other than 0, the user's session will not be started.
+
+# terminate xmessage
+killall xmessage
+
+# set the X background to plain black
+xsetroot -solid black
+
+if [ -x /etc/X11/xdm/Xstartup ]; then
+  /etc/X11/xdm/Xstartup
+fi

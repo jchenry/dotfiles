@@ -1,8 +1,6 @@
 
 [hub]
 protocol = https
-
-
 [core]
 excludesfile = /opt/boxen/config/git/gitignore
 [user]
@@ -18,5 +16,3 @@ excludesfile = /opt/boxen/config/git/gitignore
 	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
 [http]
 	sslverify = true
-[url "git@github.com:"]
-	insteadOf = https://github.com/
