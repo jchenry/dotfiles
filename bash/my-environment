@@ -3,38 +3,4 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 BASHRC_D=~/.config/bashrc.d
 [[ -r ${BASHRC_D}/bootstrap ]] && . ${BASHRC_D}/bootstrap
 
-
-
-
-export PS1='${c_user}\u${c_reset}@${c_user}\h${c_reset}:${c_path}\w${c_reset}$(git_prompt)\n\$ '
-export XDG_CONFIG_HOME=$HOME/.config
-export XDG_DATA=$HOME/.local
-
-. $XDG_CONFIG_HOME/git/git-prompt.sh
-. $XDG_CONFIG_HOME/git/git-completion.sh
-
-. $XDG_CONFIG_HOME/bash/open_github.sh
-. $XDG_CONFIG_HOME/bash/history.sh
-. $XDG_CONFIG_HOME/bash/goenv.sh
 . $XDG_CONFIG_HOME/bash/sandboxes/sandbox.sh
-. $XDG_CONFIG_HOME/bash/plan9.sh
-
-
-
-
-export FLUTTER=/usr/local/flutter
-
-export PATH="$PATH:$XDG_DATA/bin"
-#:/usr/local/sbin:$PLAN9/bin:$FLUTTER/bin"
-
-
-. $XDG_CONFIG_HOME/bash/alias.sh
-
-o () {
-    name=$1
-    eval $(op signin my)
-    key=`echo "cnffjbeq"|ebg`
-    op get item ${name} | jq -r  --arg KEY "${key}" '.details.fields[] | select(.designation=="$KEY").value' | pbcopy
-    open "$( op get item ${name} | jq -r '.overview.URLs[] | select(.l=="website").u')"
-}
-
