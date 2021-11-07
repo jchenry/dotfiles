@@ -2,3 +2,4 @@
 mono/httplistener/*
 jesseduffield/lazygit/state.yml
 gcloud
+configstore/update-notifier-npm.json
