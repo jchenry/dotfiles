@@ -2,7 +2,7 @@
 #
 # Shell for Node development
 
-FROM node:8.11.1
+FROM node:17.0.1
 MAINTAINER Colin Henry <colin@jchenry.me>
 
 

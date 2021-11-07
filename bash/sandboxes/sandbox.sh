@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+
+SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
 # a bash take on docker based dev sandboxes with apologies to Mark Mandel
 
 __docker_bash () {
@@ -19,6 +22,8 @@ __docker_bash () {
         "-e HOST_USER=${USER}" \
 	"--privileged" \
         "-v ~/.bash_history:/home/${USER}/.bash_history" \
+        "-v ~/.bash_profile:/home/${USER}/.bash_profile" \
+        "-v ~/.config:/home/${USER}/.config" \
 	"-v /var/run/docker.sock:/var/run/docker.sock" \
         "-v `pwd`:${src}" \
         ${argv:3} \
@@ -27,8 +32,7 @@ __docker_bash () {
 
 
 
-SANDBOXES=~/bin/sandboxes
-
+SANDBOXES=$SCRIPT_DIR
 # Source all the shells
 for p in $SANDBOXES/*; do
     if [[ -d $p ]]; then
