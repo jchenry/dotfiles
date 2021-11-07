@@ -4,4 +4,4 @@ export GOROOT=/usr/local/go
 export GOBIN=$XDG_DATA/bin
 export GO111MODULE=on
 export GOPRIVATE=github.com/jchenry 
-export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:$GOROOT/bin:$GOBIN
