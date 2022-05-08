@@ -7,5 +7,6 @@
 !scripts/*
 !nano/*
 !x11/**
+!starship.toml
 #directory catchall
 !*/
