@@ -1,0 +1,11 @@
+# Ignore everything
+*
+# But not these files...
+!.gitignore
+!bash/**
+!tmux/*
+!scripts/*
+!nano/*
+!x11/**
+#directory catchall
+!*/

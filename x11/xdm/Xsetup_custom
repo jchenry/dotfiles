@@ -1,0 +1,24 @@
+#!/bin/sh
+#
+# This script is run as root before showing login widget.
+
+#--- set a fullscreen black in background
+xsetroot -solid black
+
+#--- set Shutdown/Reboot buttons
+(
+xmessage -buttons Shutdown:20,Reboot:21 "" ;
+case $? in
+    20)
+    TERM=linux openvt -c 1 -f /usr/bin/clear
+        exec openvt -c 1 -f -s -- /sbin/shutdown -hP now
+        ;;
+    21)
+    TERM=linux openvt -c 1 -f /usr/bin/clear
+        exec openvt -c 1 -f -s /sbin/reboot
+        ;;
+    *)
+        echo "Xmessage closed on $(date)"
+        ;;
+esac
+) &

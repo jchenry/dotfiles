@@ -1,0 +1,4 @@
+#define /home/jchenry/.twm/icons/maximize2.xbm_width 7
+#define /home/jchenry/.twm/icons/maximize2.xbm_height 7
+static unsigned char /home/jchenry/.twm/icons/maximize2.xbm_bits[] = {
+   0x08, 0x08, 0x08, 0x7f, 0x08, 0x08, 0x08};

@@ -1,0 +1,4 @@
+#define /home/jchenry/.twm/icons/resize2.xbm_width 7
+#define /home/jchenry/.twm/icons/resize2.xbm_height 7
+static unsigned char /home/jchenry/.twm/icons/resize2.xbm_bits[] = {
+   0x78, 0x60, 0x50, 0x49, 0x05, 0x03, 0x0f};

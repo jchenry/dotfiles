@@ -1,0 +1,31 @@
+xlogin.Login.greeting:
+xlogin.Login.unsecureGreeting:
+xlogin.Login.fail:                Fail.
+xlogin.Login.changePasswdMessage: Change.
+xlogin.Login.namePrompt:          Username:
+xlogin.Login.passwdPrompt:        Password:
+xlogin.Login.echoPasswd:          true
+xlogin.Login.background:          black
+xlogin.Login.foreground:          white
+xlogin.Login.failColor:           #cccccc
+xlogin.Login.inpColor:            black
+xlogin.Login.promptColor:         #aaaaaa
+xlogin.Login.face:                courier:size=13:style=Bold
+xlogin.Login.failFace:            courier:size=13:style=Bold
+xlogin.Login.promptFace:          courier:size=13:style=Normal
+xlogin.Login.greetFace:           courier:size=13
+xlogin.Login.width:               400
+
+Xmessage*geometry:              170x30-0-0
+Xmessage*background:            black
+Xmessage*foreground:            #aaaaaa
+Xmessage*Font:                  -adobe-courier-medium-r-normal--*-100-*-*-*-*-*-*
+Xmessage*borderWidth:           0
+Xmessage*message.scrollVertical:        Never
+Xmessage*message.scrollHorizontal:      Never
+Xmessage*message*background:            black
+Xmessage*Text*background:       white
+Xmessage*Text*foreground:       #aaaaaa
+Xmessage*Text.borderColor:      black
+Xmessage*Text.borderWidth:      0
+Xmessage*Text*font:             -adobe-courier-medium-r-normal--*-100-*-*-*-*-*-*

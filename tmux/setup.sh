@@ -1,0 +1,1 @@
+git submodule add https://github.com/tmux-plugins/tpm $XDG_CONFIG_HOME/tmux/plugins/tpm

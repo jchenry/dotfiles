@@ -1,0 +1,3 @@
+DisplayManager._0.setup:        /etc/X11/xdm/Xsetup_custom
+DisplayManager._0.startup:      /etc/X11/xdm/Xstartup_custom
+DisplayManager._0.resources:    /etc/X11/xdm/Xresources_custom
