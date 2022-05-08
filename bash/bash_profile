@@ -3,4 +3,3 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 BASHRC_D=~/.config/bash/rc.d
 [[ -r ${BASHRC_D}/bootstrap ]] && . ${BASHRC_D}/bootstrap
 
-# . $XDG_CONFIG_HOME/bash/sandboxes/sandbox.sh
