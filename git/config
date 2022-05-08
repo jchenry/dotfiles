@@ -1,0 +1,22 @@
+
+[hub]
+	protocol = https
+[core]
+	editor = code --wait
+[user]
+	name = Colin Henry
+	email = jchenry@users.noreply.github.com
+[push]
+	default = simple
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+ 	tool = vscode
+[mergetool "vscode"]
+	cmd = code --wait $MERGED
+[alias]
+	lgb = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches
+[http]
+	sslverify = true

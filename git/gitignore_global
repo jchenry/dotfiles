@@ -1,0 +1,86 @@
+# temp files
+~*
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.app
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+
+#eclipse projects #
+###################
+*.classpath
+*.project
+.codepro/
+lib/*.jar
+build/
+dist/
+tmp/
+logs/
+eclipse/
+precompiled/
+*.settings
+
+
+# play project #
+################
+test-result/
+db/h2/
+indicies/
+index/
+
+# antlr project #
+#################
+gen/
+*.tokens
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Trident specific files #
+##########################
+src/com/simplymeasured/trident/Version.java
+
+# Blog Generated Files #
+########################
+_site/
+
+# Maven Specific Files #
+target/
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

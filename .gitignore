@@ -8,6 +8,8 @@
 !scripts/*
 !nano/*
 !x11/**
+!git/*
 !starship.toml
+
 #directory catchall
 !*/
