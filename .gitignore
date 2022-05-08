@@ -3,7 +3,8 @@
 # But not these files...
 !.gitignore
 !bash/**
-!tmux/*
+!tmux/tmux.conf
+!tmux/setup.sh
 !scripts/*
 !nano/*
 !x11/**
