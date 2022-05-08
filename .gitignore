@@ -11,6 +11,9 @@
 !x11/**
 !git/*
 !starship.toml
-
 #directory catchall
 !*/
+
+
+tmux/plugins/tmux-sensible/
+tmux/plugins/tmux/
