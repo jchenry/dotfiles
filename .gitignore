@@ -5,6 +5,7 @@
 !bash/**
 !tmux/tmux.conf
 !tmux/setup.sh
+!tmux/plugins/tpm
 !scripts/*
 !nano/*
 !x11/**
