@@ -10,6 +10,8 @@
 !nano/*
 !x11/**
 !git/*
+!vscode/*
+
 !starship.toml
 #directory catchall
 !*/
