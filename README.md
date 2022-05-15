@@ -9,7 +9,7 @@ xcode-select --install
 
 2. Clone repo into new hidden directory.
 
-```bash`
+```bash
 # Use SSH (if set up)...
 git clone git@github.com:jchenry/dotfiles.git ~/.config
 
@@ -18,7 +18,8 @@ git clone https://github.com/jchenry/dotfiles.git ~/.config
 ```
 
 3. run setup scripts
-```bash 
+
+```bash
 ~/.config/scripts/acct.sh
 ~/.config/scripts/brew-setup.sh
 ~/.config/macos-defaults.sh
