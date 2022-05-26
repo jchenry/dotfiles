@@ -13,6 +13,7 @@
 !git/*
 !vscode/*
 !starship.toml
+!Brewfile
 #directory catchall
 !*/
 
