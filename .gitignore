@@ -17,6 +17,6 @@
 #directory catchall
 !*/
 
-
+.gitmodules
 tmux/plugins/tmux-sensible/
 tmux/plugins/tmux/

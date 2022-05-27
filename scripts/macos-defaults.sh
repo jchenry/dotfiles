@@ -1,4 +1,4 @@
-#!/usr/bin/env bash -eo pipefail
+#!/usr/bin/env bash
 
 # Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
