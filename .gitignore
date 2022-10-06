@@ -12,6 +12,7 @@
 !x11/**
 !git/*
 !vscode/*
+!Terminal/*
 !starship.toml
 !Brewfile
 #directory catchall
